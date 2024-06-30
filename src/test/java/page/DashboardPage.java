@@ -30,7 +30,7 @@ public class DashboardPage {
     }
 
     public int getCardBalance(String cardNumber) {
-        return extractBalance(cards.find(text(cardNumber.substring(15))).getText());
+        return extractBalance(cards.find(text(cardNumber.substring(15,19))).getText());
     }
 
     public MoneyTransferPage depositToFirstCard() {
